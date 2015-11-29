@@ -1,0 +1,158 @@
+
+body {
+  font: 14px 'Open Sans';
+  margin: 0px;
+}
+
+a,
+a:visited { color: #00f; }
+
+h1 {
+  color: #aaa;
+  font-family: Times;
+  font-size: 24px;
+}
+
+p {
+  color: #aaa;
+  font-family: Times;
+  font-size: 16px;
+}
+
+.sp h2 {
+  font-size: 1.15em;
+  margin: 0 0 .5em 0;
+}
+
+.sp p {
+  font-size: 1em;
+  margin: 0 0 1em 0;
+}
+
+.sp {
+  width: 500px;
+  position: relative;
+  margin: 0 0 10px 25px;
+}
+
+.sp .tabs {
+  position: relative;
+  z-index: 101; /*Tabs container is first but we want it to display on top of panels container*/
+  display: none;
+}
+
+.sp .tabs span {
+  display: inline-block;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 8px 12px 8px 12px;
+  margin: 0px;
+  background-color: #1ABC9C;
+  cursor: pointer;
+  position: relative;
+  color:#fff;
+}
+
+.sp .tabs span:first-child {
+  padding-left: 15px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  -webkit-border-top-left-radius: 12px;
+  -moz-border-radius-topleft: 12px;
+  border-top-left-radius: 12px;
+}
+
+.sp .tabs span:last-child {
+  padding-right: 15px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  -webkit-border-top-right-radius: 12px;
+  -moz-border-radius-topright: 12px;
+  border-top-right-radius: 12px;
+}
+
+.sp .tabs span.selected {
+  color: #6fe8ff;
+  border-bottom: 1px solid #fff;
+}
+
+.sp .panel_container {
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 0 10px 10px 10px;
+  background-color: #fff;
+  overflow: hidden;
+  z-index: 100;
+  margin-top: -1px; /* sets to of panel container 1 pixel below the bottom of the tab*/
+}
+
+.sp .panel_container .panel .panel_content { padding: 15px; }
+
+/*-----commenting out these rule to apply progressive enhancements if 
+*user does not have js enabled*/
+/*.sp .panel_container .panels {position: absolute; top: 0;}
+.sp .panel_container .panel {position: absolute; height: 400px;}
+*/
+
+/*-------Game panel custom styling----------*/
+
+.sp .tabs .game.selected {
+  color: #fff;
+  background-color: #E95546;
+  border-bottom: 1px solid #866fff;
+}
+
+.sp .tabs .game:hover {
+  background-color: #fff;
+  color: #66ccff;
+}
+
+.sp .panels .game .panel_content { background: url(../images/game.jpg) no-repeat 0px 0px; }
+
+.sp .panels .game .panel_content h2 { color: #ffbd3c; }
+
+.sp .panels .game .panel_content p { color: #fff; }
+
+.sp .panels .game .panel_content a { color: #ffbd3c; }
+
+/*-------------map panel custom styling---------------*/
+
+.sp .tabs .map.selected {
+  color: #fff;
+  background-color: #E95546;
+  border-bottom: 1px solid #866fff;
+}
+
+.sp .tabs .map:hover {
+  background-color: #fff;
+  color: #66ccff;
+}
+
+.sp .panels .map .panel_content { background: url(../images/map.jpg) no-repeat 0px 0px; }
+
+.sp .panels .map .panel_content h2 { color: #ffbd3c; }
+
+.sp .panels .map .panel_content p { color: #fff; }
+
+.sp .panels .map .panel_content a { color: #ffbd3c; }
+
+/*-------------cssPanel panel custom styling---------------*/
+
+.sp .tabs .cssPanel.selected {
+  color: #fff;
+  background-color: #E95546;
+  border-bottom: 1px solid #866fff;
+}
+
+.sp .tabs .cssPanel:hover {
+  background-color: #fff;
+  color: #66ccff;
+}
+
+.sp .panels .cssPanel .panel_content { background: url(../images/parallax.jpg) no-repeat 0px 0px; }
+
+.sp .panels .cssPanel .panel_content h2 { color: #ffbd3c; }
+
+.sp .panels .cssPanel .panel_content p { color: #fff; }
+
+.sp .panels .cssPanel .panel_content a { color: #ffbd3c; }

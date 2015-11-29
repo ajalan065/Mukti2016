@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Home</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="MUKTI 2016" />
+    <meta name="keywords" content="GLUG NIT DURGAPUR MUKTI" />
+    <meta name="author" content="AJalan">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=0;" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <style> [data-sr] { visibility: hidden; }</style>
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<link rel="icon" href="images/favicon.ico">
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/camera.css">
+		<link rel="stylesheet" href="css/form.css">
+		<link type="text/css" rel="stylesheet" href="css/sliding_panels.css" />
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+		<link rel="stylesheet" type="text/css" href="css/comp.css" />
+    <script src="js/modernizr.custom.js"></script>
+		<script src="js/scrollReveal.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/sliding_panels.js"></script>
+
+		<noscript>
+			<link href='http://fonts.googleapis.com/css?family=Jura:500' rel='stylesheet' type='text/css'>
+			<link rel="stylesheet" href="css/skel.css" />
+
+
+			<link rel="stylesheet" href="css/style-desktop.css"  />
+
+			<link rel="stylesheet" href="css/jpreloader.css" />
+			<link rel="stylesheet" href="css/component.css" />
+			<link rel="stylesheet" href="css/tabs.css" />
+			<link rel="stylesheet" href="css/tabstyles.css" />
+			<link rel="stylesheet" href="css/style-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+		</noscript>
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-migrate-1.1.1.js"></script>
+		<script src="js/superfish.js"></script>
+		<script src="js/forms.js"></script>
+		<script src="js/jquery.ui.totop.js"></script>
+		<script src="js/jquery.equalheights.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="js/jquery.ui.totop.js"></script>
+		<script src="js/tms-0.4.1.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.slider_wrapper')._TMS({
+					show:0,
+					pauseOnHover:false,
+					prevBu:'.prev',
+					nextBu:'.next',
+					playBu:false,
+					duration:800,
+					preset:'fade',
+					pagination:true,//'.pagination',true,'<ul></ul>'
+					pagNums:false,
+					slideshow:8000,
+					numStatus:false,
+					banners: 'fade',
+					waitBannerAnimation:false,
+					progressBar:false
+				});
+			});
+			$(document).ready(function(){
+				!function(){
+			var map=[]
+			 ,names=[]
+			 ,win=$(window)
+			 ,header=$('header')
+			 ,currClass
+			$('.content').each(function(n){
+			 map[n]=this.offsetTop
+			 names[n]=$(this).attr('id')
+			})
+			win
+			 .on('scroll',function(){
+				var i=0
+				while(map[i++]<=win.scrollTop());
+				if(currClass!==names[i-2])
+				currClass=names[i-2]
+				header.removeAttr("class").addClass(names[i-2])
+			 })
+			}(); });
+					function goToByScroll(id){
+				$('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
+				}
+				$(document).ready(function(){
+					$().UItoTop({ easingType: 'easeOutQuart' });
+				});
+		</script>
+		<!--[if lt IE 8]>
+			<div style=' clear: both; text-align:center; position: relative;'>
+				<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+					<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+				</a>
+			</div>
+		<![endif]-->
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<link rel="stylesheet" media="screen" href="css/ie.css">
+		<![endif]-->
+	</head>
+	<body class="">
+
+<!--==============================header=================================-->
+		<header class="page1">
+			<div class="container_12">
+				<div class="grid_12">
+					<h1><a href="#" onClick="goToByScroll('page1'); return false;"><img src="images/logo.png" alt="Gerald Harris attorney at law"></a></h1>
+					<div class="menu_block">
+						<nav class="">
+							<ul class="sf-menu">
+								<li class="current men"><a onClick="goToByScroll('page1'); return false;" href="#">Home </a> <strong class="hover"></strong></li>
+								<li class="men1"><a onClick="goToByScroll('page2'); return false;" href="#">About Us</a><strong class="hover"></strong></li>
+								<li class=" men2"><a onClick="goToByScroll('page3'); return false;" href="#">Events</a> <strong class="hover"></strong></li>
+								<li class=" men3"><a onClick="goToByScroll('page4'); return false;" href="#">Sponsors</a> <strong class="hover"></strong></li>
+								<li class=" men4"><a onClick="goToByScroll('page5'); return false;" href="#">Contacts</a> <strong class="hover"></strong></li>
+							</ul>
+						</nav>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</header>
+
+<!--=======content================================-->
+		<div id="page1" class="content">
+			<div class="container_12">
+				<div class="grid_13">
+					<div class="slider_wrapper">
+						<ul class="items">
+							<li>
+								<img src="images/spacer.gif" alt="">
+								<div class="caption banner">
+									<h2>Let Us Show You the Way to Success</h2>
+								</div>
+							</li>
+							<li>
+								<img src="images/spacer.gif" alt="">
+								<div class="caption banner">
+									<h2>Interminable Energy for Your Project</h2>
+								</div>
+							</li>
+							<li>
+								<img src="images/spacer.gif" alt="">
+								<div class="caption banner">
+									<h2>We know how to solve your problems!</h2>
+								</div>
+							</li>
+							<li>
+								<img src="images/spacer.gif" alt="">
+								<div class="caption banner">
+									<h2>Make your business a booming one!</h2>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="page2" class="content">
+			<div class="container_12">
+				<div class="grid_14">
+					<div class="slogan">
+						<h3>We are <a onClick="goToByScroll('page3'); return false;" href="#"><span>GNU/Linux Users' Group</span></a><a onClick="goToByScroll('page4'); return false;" href="#"><em>NIT Durgapur</em></a></h3>
+					</div>
+					<div id="abtus">
+					<p> The GNU/Linux Users’ Group of NIT Durgapur (NITDGP LUG) is a community of GNU/Linux users and promoters of Free and Open Source Software.
+
+								The Group was established in 2003 by a bunch of FOSS enthusiasts with the objective of spreading awareness about the world of Free and Open Source Softwares and popularising their use in the campus. Since then the group has evolved into a body that is now an active part of the open source community through numerous contributions to a wide range of open source projects. The group strives hard to introduce the philosophy and encourage the use of FOSS across all departments of study, here at NIT Durgapur. We, the members, believe that Software freedom is as essential as the civil liberty of freedom of Speech.</p>
+
+					<p> MUKTI, the only FOSS Festival of Eastern India, is a three-day meet at NIT Durgapur where we celebrate the freedom of Open Source.
+
+								Owing to the success attained by it in recent years, it attracts a lot of participation and has been a venue where students of various age groups and domains, professionals (of both IT and non-IT fields), enthusiasts and the curious have come together to get introduced to FOSS, interact with each other and share their experiences. The intense atmosphere of competition is doubled up with Talks and Workshops by few of the brightest and most active minds in the Indian Open Source community. </p>
+				</div>
+				</div>
+				<!-- <div class="grid_3">
+					<div class="box maxheight">
+						<img src="images/box_img1.jpg" alt="">
+						<div class="text1"><a href="#">Laura Stegner</a></div>senior manager
+						<div class="socials1">
+							<a href="#"></a>
+							<a href="#"></a>
+							<a href="#"></a>
+							<a href="#"></a>
+						</div>
+					</div>
+				</div>
+				<div class="grid_3">
+					<div class="box maxheight">
+						<img src="images/box_img2.jpg" alt="">
+						<div class="text1"><a href="#">Anton Stegner</a></div> manager
+						<div class="socials1">
+							<a href="#"></a>
+							<a href="#"></a>
+							<a href="#"></a>
+							<a href="#"></a>
+						</div>
+					</div>
+				</div>
+				<div class="grid_3">
+					<div class="box maxheight">
+						<img src="images/box_img3.jpg" alt="">
+						<div class="text1"><a href="#">Lisa Haddon </a></div>accounter
+						<div class="socials1">
+							<a href="#"></a>
+							<a href="#"></a>
+							<a href="#"></a>
+							<a href="#"></a>
+						</div>
+					</div>
+				</div>
+				<div class="grid_3">
+					<div class="box maxheight">
+						<img src="images/box_img4.jpg" alt="">
+						<div class="text1"><a href="#">Bradley Grosh</a></div>director
+						<div class="socials1">
+							<a href="#"></a>
+							<a href="#"></a>
+							<a href="#"></a>
+							<a href="#"></a>
+						</div>
+					</div>
+				</div> -->
+			</div>
+		</div>
+		<div id="page3" class="content">
+		  <div class="container_12">
+		  <div class="grid_14">
+					<div class="slogan">
+						<h3>Our Events</h3>
+		  	</div></div>
+			</div>
+			<section class="carousel">
+			<div class="reel">
+  			<ul class="car c-style-5">
+        <li>
+          <figure>
+            <img src="images/thumbs/treasure.jpg" alt="treasure">
+            <figcaption>
+              <h4>Online Treasure Hunt</h4>
+              <a href="http://dribbble.com/shots/1116685-Settings">Take a look</a>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="images/thumbs/incanity.jpg" alt="incanity">
+            <figcaption>
+              <h4>Incanity</h4>
+              <a href="http://dribbble.com/shots/1116685-Settings">Take a look</a>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="images/thumbs/shootball.jpg" alt="shootball">
+            <figcaption>
+              <h4>Shootball</h4>
+              <a href="http://dribbble.com/shots/1116685-Settings">Take a look</a>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="images/thumbs/freepl.jpg" alt="freepl">
+            <figcaption>
+              <h4>Freepl</h4>
+              <a href="http://dribbble.com/shots/1116685-Settings">Take a look</a>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="images/thumbs/codecracker.jpg" alt="codecracker">
+            <figcaption>
+              <h4>Codecracker</h4>
+              <a href="http://dribbble.com/shots/1116685-Settings">Take a look</a>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="images/thumbs/freemex.jpg" alt="freemex">
+            <figcaption>
+              <h4>Freemex</h4>
+              <a href="http://dribbble.com/shots/1116685-Settings">Take a look</a>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="images/thumbs/lipi.jpg" alt="lipi">
+            <figcaption>
+              <h4>Lipi</h4>
+              <a href="http://dribbble.com/shots/1116685-Settings">Take a look</a>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+      </div>
+      </section>
+				<!-- <div class="grid_14">
+
+				</div>
+				<div class="grid_3">
+					<div class="box maxheight1">
+						<img src="images/box1_img1.png" alt="">
+						<div class="text1"><a href="#">Strategy</a></div>Vivamus at magna non nunc tristique rhoncus. Aliquam nibh ante, egestas id dictum a, commodo luctus libero.
+					</div>
+				</div>
+				<div class="grid_3">
+					<div class="box maxheight1">
+						<img src="images/box1_img2.png" alt="">
+						<div class="text1"><a href="#">Research</a></div>Ite auctor non pellentesque vel, aliquet sit amet erat. Nullam eget dignissim nisi, aliquam feugiat nibhh sagittis ut.
+					</div>
+				</div>
+				<div class="grid_3">
+					<div class="box maxheight1">
+						<img src="images/box1_img3.png" alt="">
+						<div class="text1"><a href="#">Development</a></div>Praesent faucibusamus ater asmagna non nunc tristique rhoncus. Aliquam nib ante, tas id dictum aluctus libero.
+					</div>
+				</div>
+				<div class="grid_3">
+					<div class="box maxheight1">
+						<img src="images/box1_img4.png" alt="">
+						<div class="text1"><a href="#">Consulting</a></div>Etiam dui eros na non nunc tristique rhoncus. Aliquam nibh ante, egestas id dictum a commodo luctus libero.
+					</div>
+				</div> -->
+			</div>
+
+
+		<div id="page4" class="content">
+			<div class="container_12">
+				<div class="grid_12">
+					<h3>Our Sponsors</h3>
+					</div>
+<div class="sp">
+			<div class="tabs">
+				<!-- <span class="map">Neighborhood Map</span> --><span class="game">Frogger Game Clone</span><span class="cssPanel">CSS Scrolling Panel</span>
+			</div>
+			<div class="panel_container">
+				<div class="panels">
+					<!-- <div class="panel map">
+						<div class="panel_content">
+							<img src="images/sponsors/arti.jpg" width="200" height="200" />
+							<img src="images/sponsors/bytecode.jpg" width="200" height="200"/>
+						</div>
+					</div> -->
+					<div class="panel game">
+						<div class="panel_content">
+							<h2>Frogger Game Clone Project</h2>
+							<p>This game is a version of the classic arcade game Frogger. This version of the game was built in HTML5, JavaScript, and CSS3. To run this game, your browser must support JavaScript. Use directional arrows to move the player across the street. Once you reach the water the game will restart. 2. Avoid colliding with bugs. If you collide with a bug, the player will be reset at the starting position. 3. Use the reset button to reset the game at any time. 4. You can end the game at any time by closing the browser window or navigating away from the web page. Good luck and have fun!.</p>
+							<p><a href="#" target="_blank">Play Game</a><br/>
+							</p>
+						</div>
+					</div>
+					<div class="panel cssPanel">
+						<div class="panel_content">
+							<h2>CSS Parallax Effect</h2>
+							<p>CSS Scrolling panel effect. This project utilizes CSS to create a scrolling effect also known as parallaxing. To create this project I created seven div containers and added an image to every other div. The second div contains the title, which appears to scroll up as you scroll down on the web page. Divs 4 and 6 are empty; however, as you can see in the CSS and HTML files, you can add text to them as well.</p>
+							<p><a href="#">Learn more</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+				</div>
+
+		</div>
+
+
+		<div id="page5" class="content">
+			<div class="container_12">
+			<div class="posn">
+			<div class="grid_3b">
+					<div class="box maxheight">
+						<img src="images/box_img2.jpg" alt="">
+						<div class="text1">Namit Mahuvakar</div> President<br />+91-9804223050
+						<div class="socials1">
+							<a href="#"></a>
+							<a href="#"></a>
+							<a href="#"></a>
+							<a href="#"></a>
+						</div>
+					</div>
+				</div>
+				<div class="grid_3b">
+					<div class="box maxheight">
+						<img src="images/box_img3.jpg" alt="">
+						<div class="text1">Arijit Karmakar</div>Convenor<br />+91-9635268140
+						<div class="socials1">
+							<a href="#"></a>
+							<a href="#"></a>
+							<a href="#"></a>
+							<a href="#"></a>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				</div>
+			</div>
+			</div>
+<!--==============================footer=================================-->
+		<footer>
+		<br />
+			<div class="container_12">
+				<div class="grid_15">
+				<div id="more">
+					<p><a href="http://nitdgplug.org">GNU/Linux Users' Group</a></p>
+					<p><a href="http://www.nitdgplug.org">Go to NIT Durgapur Home</a></p>
+					<p><a href="https://www.facebook.com/muktinitdurgapur"><img src="images/fb.png" width="30px" height="30px"/></a>&nbsp;<a href="https://twitter.com/mukti_nitd"><img src="images/twitter.png" width="30px" height="30px" /></a> &nbsp;<a href="https://www.youtube.com/channel/UCYZPnN5vP5B1sINLLkI1aDA"><img src="images/youtube.png" width="30px" height="30px"/></a>&nbsp;<a href="https://github.com/lugnitdgp"><img src="images/github.png" width="30px" height="30px"/></a></p>
+				</div></div>
+				<div class="clear"></div>
+			</div>
+		</footer>
+		<div class="grid_map">
+			<figure class="">
+				<iframe
+  width="100%"
+  height="400"
+  src="https://www.google.com/maps/embed/v1/search?key=AIzaSyCwJaU_0qrRkenAK-2bcTcQ2XCPz4hjqR0&q=National+Institute+of+technology+Durgapur+West+Bengal+India">
+				</iframe>
+			</figure>
+		</div>
+	</body>
+</html>
