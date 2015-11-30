@@ -222,6 +222,11 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  .container_12 .grid_13 {
+    width: 760px;
+
+    margin-left: -5em;
+  }
   .container_12 .grid_13 .slider_wrapper .items {
     width: 750px;
   }
@@ -233,7 +238,27 @@ body {
   }
 }
 
-@media only screen and (max-width: 480px) {     /*mobiles*/
+@media only screen and (min-width: 240px) and (max-width: 759px) and (orientation: portrait) {
+
+  .container_12 .grid_14 {
+    width: 375px;
+  }
+
+  #abtus p {
+    text-align: justify;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 240px) and (max-width: 759px) and (orientation: landscape) {
+
+  .container_12 .grid_14 {
+    width: 610px;
+    margin-left: -2em;
+  }
+}
+/*@media only screen and (max-width: 480px) {
   .container_12 .grid_14 {
     width: 310px;
   }
@@ -247,7 +272,7 @@ body {
     padding: 0.5em 0.5em 0.5em 0.5em;
     color: white;
   }
-}
+}*/
 
 @media only screen and (min-width: 600px) and (max-width: 768px) { /*tablet*/
   .container_12 .grid_14 {
@@ -375,7 +400,37 @@ body {
     width: 1000px;
   }
 }
+@media only screen and (min-width: 769px) {   /*desktop*/
+  .container_12 .grid_17 {
+    width: 1000px;
+  }
+  .container_12 .grid_17 h4 {
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width: 240px) and (max-width: 759px) and (orientation: portrait) {
 
+  .container_12 .grid_17 {
+    width: 375px;
+  }
+}
+
+@media only screen and (min-width: 240px) and (max-width: 759px) and (orientation: landscape) {
+
+  .container_12 .grid_17 {
+    width: 610px;
+    margin-left: -2em;
+  }
+}
+
+@media only screen and (min-width: 765px) and (max-width: 768px) {
+  .container_12 .grid_17 {
+    width: 760px;
+  }
+
+  .container_12 .grid_17 h4 {
+    font-size: 1.5em;
+}
 
 /* `Prefix Extra Space >> 12 Columns
 ----------------------------------------------------------------------------------------------------*/
