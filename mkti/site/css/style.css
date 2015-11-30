@@ -32,6 +32,11 @@ body {
 	min-width:960px;
 	background: #334960;
 }
+@media only screen and (min-width: 760px) {
+		body{
+			overflow-x: hidden;
+		}
+}
 
 .ic {
 	border:0;
@@ -663,4 +668,45 @@ footer a:hover {
 }
 #toTop:hover {
 	background-position: right 0;
+}
+
+
+#page4 .sponstab .button {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    font-size: 1.7em;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#page4 .sponstab .button:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+#page4 .sponstab .button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+#page4 .section {
+	display: none;
 }
